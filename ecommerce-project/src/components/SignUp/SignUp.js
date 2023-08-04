@@ -1,5 +1,10 @@
-// SignUp.js
 import React, { useState } from 'react';
+
+// styling
+import './SignUp.css';
+import signupImage from '../../assets/Cereal.jpg'; // Replace 'path_to_your_image.jpg' with the actual image file path.
+
+
 
 const SignUp = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -13,8 +18,16 @@ const SignUp = () => {
     // Add your form submission logic here, and use the 'isChecked' state as needed
     console.log('Form submitted:', isChecked);
   };
+  
+   
 
   return (
+    <div className="form-comp cfb">
+    {/* Form and Image Container */}
+    <div className="form-and-image-container">
+      {/* Image */}
+      <img src={signupImage} alt="Signup" />
+     
     <div>
       <h2>Get Started Now</h2>
       <form onSubmit={handleSubmit}>
@@ -42,6 +55,8 @@ const SignUp = () => {
         </div>
         <button type="submit">Create Account</button>
       </form>
+    </div>
+    </div>
     </div>
   );
 };

@@ -1,0 +1,71 @@
+/* Styling for the form and image container */
+/* SignUp.css */
+
+/* Styling for the form and image container */
+.form-comp {
+    display: flex;
+    max-width: 1000px;
+    background-color: white; /* Background color for the container */
+    padding: 20px; /* Add some padding around the container */
+    border-radius: 15px; /* Border radius for the container */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    border: 1px solid #ccc; /* Reduce the width of the border */
+  }
+  
+  .form-and-image-container {
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly; /* Add spacing between the image and the form */
+    margin-bottom: 20px; /* Add some spacing between the image and the form */
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  /* Rest of the existing styles */
+  
+/* Styling for the image */
+.form-and-image-container img {
+  max-width: 50%; /* Adjust the image size as needed */
+  border-radius: 10px; /* Add border radius to the image */
+  
+}
+
+/* Additional styling for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Limit the width of the form */
+}
+
+form div {
+  margin-bottom: 10px; /* Add some spacing between form elements */
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px; /* Add some extra spacing below the form */
+  padding: 10px 20px; /* Adjust button padding */
+  background-color: green; /* Background color for the button */
+  color: #fff; /* Text color for the button */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Border radius for the button */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #024d63; /* Button color on hover */
+}

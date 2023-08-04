@@ -6,6 +6,7 @@ import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faHeart, faCartPlus, faSlidersH } from '@fortawesome/free-solid-svg-icons';
 
+
 import Poultry from '../../assets/Poultry.jpg';
 import Vegetable from '../../assets/Vegetable.jpg';
 import Fruit from '../../assets/Fruit.jpg';
@@ -62,9 +63,13 @@ const Header = () => {
           </div>
           
           <div className="user-auth">
-          {/* Use the Link component to link to the SignUp page */}
+            {/* Use the Link component to link to the SignUp page */}
             <Link to="/signup">
               <button className="sign-up-button">Sign Up</button>
+            </Link>
+            {/* Use the Link component to link to the SignIn page */}
+            <Link to="/signin">
+              <button className="sign-in-button">Sign In</button>
             </Link>
           </div>
           
@@ -107,8 +112,9 @@ const Header = () => {
 <div className="header-sort">
   <label htmlFor="sort-select">Sort By:</label>
   <select id="sort-select">
-    <option value="price">Relevance</option>
+    <option value="relevance">Relevance</option>
     <option value="name">Name</option>
+    <option value="price">Price</option>
     {/* Add more sorting options as needed */}
   </select>
 </div>
