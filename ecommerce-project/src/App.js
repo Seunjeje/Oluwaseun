@@ -10,9 +10,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} /> {/* Define the route for the SignIn component */}
-        {/* Add other routes and components as needed */}
-        </Routes>
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
     </BrowserRouter>
   );
 };
