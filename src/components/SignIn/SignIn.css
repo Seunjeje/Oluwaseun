@@ -1,0 +1,49 @@
+.cfb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-comp {
+    flex-direction: column;
+}
+
+.sign-in-form {
+    width: 50%;
+    flex-direction: column;
+}
+
+.sign-in-form>label {
+    padding: 0.5em;
+    width: 100%
+}
+
+.sign-in-form>label>input {
+    width: 250%
+}
+
+
+button {
+    padding: 1em;
+    border: 1px solid #EEFCF8;
+    border-radius: 5em;
+    background-color: green;
+    color: #EEFCF8;
+    font-weight: bold;
+    text-decoration: none;
+    width: 101px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+input {
+    padding: 0.5em;
+    border: 1px solid #035E7B;
+}
